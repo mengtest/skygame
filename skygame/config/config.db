@@ -1,0 +1,25 @@
+--数据库配置
+
+DBMax_Packet_Size = 1024 * 1024
+
+DBCenterName = "skygame_center"
+DBCenterHost = IPLocal
+DBCenterPort = 3306
+DBCenterUser = "root"
+DBCenterPassword = "EodMysql12.,."
+
+--游戏数据库名字在对应的服务器配置中
+DBGameName = "skygame_game"      --游戏服数据库，代码中连接服务器ID
+DBGameHost = IPLocal
+DBGamePort = 3306
+DBGameUser = "root"
+DBGamePassword = "EodMysql12.,."
+
+--日志数据库
+LOGDBHOST = IPLocal
+LOGDBPORT = 27017
+LOGDBUSERNAME = "eoduser"
+LOGDBPASSWORD = "eodpass@123"
+LOGDBNAME_GAME = "skygame_gamelog"
+LOGDBNAME_CHAT = "skygame_chatlog"
+LOGDBNAME_BATTLE = "skygame_battlelog"

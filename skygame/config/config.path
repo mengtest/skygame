@@ -1,0 +1,9 @@
+--路径配置
+project = "./"
+engine = "./engine/"
+
+lualoader = engine.."lualib/loader.lua"
+lua_cpath = engine.."luaclib/?.so"
+cpath = engine.."cservice/?.so"
+luaservice = engine.."service/?.lua;"..project.."?.lua;"..engine.."?.lua;"	--服务文件路径
+lua_path = engine.."lualib/?.lua;"..engine.."lualib/?/init.lua;"..project.."?.lua;"	--包含的lua文件

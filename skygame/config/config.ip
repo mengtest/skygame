@@ -1,0 +1,4 @@
+IPLocal = "0.0.0.0"
+IPTest = "192.168.2.224"
+
+ControlPort = 1098

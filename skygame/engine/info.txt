@@ -1,0 +1,11 @@
+必须配置的脚本：
+script.global.ServerInit
+
+script.netmsg.netmsg
+
+script.!LuaIde!.IDEskynet
+
+必备的配置表：
+CFGSchedule.lua
+
+公共模块common，按需继承

@@ -1,0 +1,12 @@
+local types = {itemId="number", itemType="number", itemName="string", itemDesc="string", userLevel="number", itemList="table", itemDict="table", itemBool="bool", itemFloat="number", itemDouble="number", orgBundleName="string", orgAssetName="string", intPair="none", lstIntPair="table", useLevel="number", itemVector2="table", itemVector3="table"}
+local table = {
+[1]={itemId=1,itemType=2,userLevel=1,itemList={1,2,3,4,5},itemDict={["n"]="\"test\"",["\"p\""]="\"123\""},itemBool=true,itemFloat=1.111,itemDouble=1.111,orgBundleName="ui/billboard/arrow",orgAssetName="arrow",intPair={1,1},lstIntPair={{1,1},{1,1},{2,1}}},
+[2]={itemId=2,itemType=2,userLevel=1,itemList={1,2,3,4,5},itemDict={["n"]="\"test\"",["\"p\""]="\"123\""},itemFloat=1.111,itemDouble=1.111,orgBundleName="ui/billboard/arrow",orgAssetName="arrow",intPair={1,1},lstIntPair={{1,1},{1,1},{2,1}}},
+[3]={itemId=3,itemType=4,userLevel=1,itemList={1,2,3,4,5},itemDict={["n"]="\"test\"",["\"p\""]="\"123\""},itemFloat=1.111,itemDouble=1.111,orgBundleName="ui/billboard/arrow",orgAssetName="arrow",intPair={1,1},lstIntPair={{1,1},{1,1},{2,1}}},
+[4]={itemId=4,itemType=3,userLevel=1,itemList={1,2,3,4,5},itemDict={["n"]="\"test\"",["\"p\""]="\"123\""},itemBool=true,itemFloat=1.111,itemDouble=1.111,orgBundleName="ui/billboard/arrow",orgAssetName="arrow",intPair={1,1},lstIntPair={{1,1},{1,1},{2,1}}},
+[5]={itemId=5,itemType=21,userLevel=1,itemList={1,2,3,4,5},itemDict={["n"]="\"test\"",["\"p\""]="\"123\""},itemFloat=1.111,itemDouble=1.111,orgBundleName="ui/billboard/arrow",orgAssetName="arrow",intPair={1,1},lstIntPair={{1,1},{1,1},{2,1}}},
+[6]={itemId=6,itemType=11,userLevel=1,itemList={1,2,3,4,5},itemDict={["n"]="\"test\"",["\"p\""]="\"123\""},itemFloat=1.111,itemDouble=1.111,orgBundleName="ui/billboard/arrow",orgAssetName="arrow",intPair={1,1},lstIntPair={{1,1},{1,1},{2,1}}},
+[10001]={itemVector2={{1,1},{2,2}},itemId=10001,itemType=2,itemName="屠龙刀",itemDesc="ItemDesc10001",itemList={1,2,3,4,5},itemDict={["\"phone\""]="\"1234566\"",["name"]="\"test\"",["1"]="\"test3\""},itemBool=true,itemFloat=1.111,itemVector3={["pos2"]={6,7,8},["pos"]={2,3,1.7}},useLevel=20},
+[20001]={itemId=20001,itemType=1,itemName="abcd",itemDesc="神兵利器",itemList={1,2,3,4,5},itemDict={["name"]="\"test\"",["\"phone\""]="\"1234566\""},itemBool=true,itemFloat=1.111,useLevel=90}
+}
+return {table, types}

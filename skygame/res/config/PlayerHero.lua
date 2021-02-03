@@ -1,0 +1,30 @@
+local types = {id="number", heroID="number", isOpen="bool", getType="number", cost="number", modelTex="number"}
+local table = {
+[1]={id=1,heroID=1,modelTex=1000},
+[2]={id=2,heroID=2,isOpen=true,cost=500,modelTex=1000},
+[3]={id=3,heroID=3,isOpen=true,getType=1,cost=800,modelTex=1001},
+[4]={id=4,heroID=4,isOpen=true,getType=1,cost=1300,modelTex=1002},
+[5]={id=5,heroID=5,isOpen=true,cost=3300,modelTex=1003},
+[6]={id=6,heroID=6,cost=5300},
+[7]={id=7,heroID=50,isOpen=true,getType=1,cost=5400,modelTex=1004},
+[8]={id=8,heroID=60,isOpen=true,cost=7600,modelTex=1005},
+[9]={id=9,heroID=61,cost=9900},
+[10]={id=10,heroID=70,isOpen=true,getType=1,cost=9900,modelTex=1007},
+[11]={id=11,heroID=80,isOpen=true,getType=1,cost=12000,modelTex=1009},
+[12]={id=12,heroID=90,isOpen=true,getType=1,cost=15000,modelTex=1010},
+[13]={id=13,heroID=100,isOpen=true,getType=1,cost=18000,modelTex=1006},
+[14]={id=14,heroID=110,getType=1,cost=12000,modelTex=1008},
+[15]={id=15,heroID=120,getType=1,cost=12000,modelTex=1013},
+[16]={id=16,heroID=130,getType=1,cost=12000,modelTex=1012},
+[17]={modelTex=1011,id=17,heroID=140,cost=12000},
+[18]={modelTex=1015,id=18,heroID=150,cost=12000},
+[19]={modelTex=1014,id=19,heroID=160,cost=12000},
+[20]={modelTex=1018,id=20,heroID=170,cost=12000},
+[21]={modelTex=1019,id=21,heroID=180,cost=12000},
+[22]={modelTex=1020,id=22,heroID=190,cost=12000},
+[23]={modelTex=1021,id=23,heroID=200,cost=12000},
+[24]={modelTex=1022,id=24,heroID=210,cost=12000},
+[25]={modelTex=1017,id=25,heroID=220,cost=12000},
+[26]={id=26,heroID=230,isOpen=true,getType=1,cost=12000,modelTex=1023}
+}
+return {table, types}

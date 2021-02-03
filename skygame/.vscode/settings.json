@@ -1,0 +1,8 @@
+{
+    //代码提示顺序
+    "editor.snippetSuggestions": "bottom",
+    //搜索忽略文件
+    "search.exclude": {
+        "**/netmsg.lua": true
+    },
+}

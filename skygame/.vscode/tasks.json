@@ -1,0 +1,69 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Terminal",
+            "type": "shell",
+            "command": "ssh lsx@192.168.2.224",
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "SvrGame1",
+            "type": "shell",
+            "presentation": {
+                "clear": true,
+                "panel": "dedicated"
+            },
+            "command": "ssh lsx@192.168.2.224 'cd ../../mnt/hgfs/skygame/skygame;./skygame config/SvrGame1'",
+            "problemMatcher": [],
+        },
+        {
+            "label": "Build",
+            "dependsOn": [
+                "SvrGame1",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Close",
+            "type": "shell",
+            "command": "ssh lsx@192.168.2.224 'killall -9 skygame'",
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "MakeNetMsg",  //linux中执行编译
+            "type": "shell",
+            "command": "ssh lsx@192.168.2.224 'cd ../../mnt/hgfs/skygame/tool;./MakeNetMsg.sh skygame'",
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "CopyU3DNetmsg",  //windows中执行复制
+            "type": "shell",
+            "presentation": {
+                "clear": true
+            },
+            "command": "../tool/CopyToU3DClient.bat E:\\Work\\UnityGame\\program\\msg",
+            "problemMatcher": []
+        },
+        {
+            "label": "GenerateConfig",  //windows中执行复制
+            "type": "shell",
+            "presentation": {
+                "clear": true
+            },
+            "command": "../tool/GenConfig.bat D:\\Work\\LSX\\skygame\\skygame\\res\\config E:\\Work\\UnityGame\\program\\config\\lua\\client\\phone",
+            "problemMatcher": []
+        },
+    ]
+}

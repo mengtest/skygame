@@ -1,0 +1,19 @@
+#TAG 1 ~ 5000 for C# NetMsg
+#TAG 5001 ~ MAX for LUA NetMsg
+#integer boolean string binary
+
+@ALL_GO
+.package
+{
+  type : integer      #消息号
+  session : integer   #回调函数
+}
+@ALL_END
+
+.Property #通用属性结构
+{
+  Key : string    #属性的key
+  Type : string   #s，b，i
+  Int : integer   #整形
+  Str : string    #字符串
+}

@@ -1,0 +1,26 @@
+
+@GAME_CS_PLAYER_BEGIN   #开始获取游戏数据
+{
+  request
+  {
+  }
+}
+@GAME_SC_PLAYER_PUSHDATA    #推送玩家数据
+{
+  request
+  {
+  }
+}
+@GAME_SC_PLAYER_PROPERTY    #属性修改
+{
+  request
+  {
+    PropertyList : *Property  #变化的属性列表
+  }
+}
+@GAME_SC_PLAYER_OVER    #全部数据发送完成， 可以开始游戏了
+{
+  request
+  {
+  }
+}

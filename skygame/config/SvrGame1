@@ -1,0 +1,18 @@
+include "config.com"
+--日志
+--logger = "./log/SvrGame1"
+--逻辑脚本
+start = "script/GameMain"	              
+address = IPLocal..":1100"
+ipaddress = IPTest..":1100"
+
+SvrArea = "China"
+SvrName = "SvrGame"
+SvrID = 1
+
+IsOpenLog = true
+IsOpenGMCommond = true
+IsOpenCluster = false
+IsOpenDebugConsole = true
+DebugConsolePort = 1199
+AgreementVersion = "1.0"

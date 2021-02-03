@@ -1,0 +1,20 @@
+#---登录---#LOGIN
+@LOGIN_CS_EODGUEST    #游客登录
+{
+  request
+  {
+    token : string  #唯一标识
+  }
+  response
+  {
+    IsShowAgreement : boolean   #是否显示用户协议
+    UID : integer
+  }
+}
+@LOGIN_CS_AGREEMENT   #同意用户协议
+{
+  request
+  {
+    UID : integer
+  }
+}
